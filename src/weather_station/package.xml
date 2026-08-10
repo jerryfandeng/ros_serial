@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>weather_station</name>
+  <version>0.1.0</version>
+  <description>
+    ROS Noetic package that reads AHT20 temperature/humidity logs from an
+    STM32 over serial and republishes them as WeatherData messages.
+  </description>
+  <maintainer email="jerry@example.com">Jerry</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>roscpp</depend>
+  <depend>std_msgs</depend>
+  <depend>serial</depend>
+
+  <build_depend>message_generation</build_depend>
+  <build_export_depend>message_runtime</build_export_depend>
+  <exec_depend>message_runtime</exec_depend>
+</package>

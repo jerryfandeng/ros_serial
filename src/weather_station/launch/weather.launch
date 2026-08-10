@@ -1,0 +1,11 @@
+<launch>
+  <arg name="port" default="/dev/ttyUSB0"/>
+  <arg name="baudrate" default="115200"/>
+
+  <node name="weather_publisher" pkg="weather_station" type="weather_publisher" output="screen">
+    <param name="port" value="$(arg port)"/>
+    <param name="baudrate" value="$(arg baudrate)"/>
+  </node>
+
+  <node name="weather_subscriber" pkg="weather_station" type="weather_subscriber" output="screen"/>
+</launch>

@@ -1,0 +1,11 @@
+build/
+devel/
+logs/
+*.log
+.catkin_tools/
+.idea/
+.vscode/
+__pycache__/
+*.pyc
+AGENTS.md
+MEMORY.md
